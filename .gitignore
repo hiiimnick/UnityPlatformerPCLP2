@@ -361,3 +361,32 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Library/Bee
+/Library/BurstCache/JIT
+/Library/GridBrush
+/Library/AnnotationManager
+/Library/ArtifactDB
+/Library/ArtifactDB-lock
+/Library/BuildPlayer.prefs
+/Library/BuildSettings.asset
+/Library/EditorOnlyScriptingSettings.json
+/Library/EditorOnlyVirtualTextureState.json
+/Library/EditorSnapSettings.asset
+/Library/EditorUserBuildSettings.asset
+/Library/expandedItems
+/Library/ilpp.pid
+/Library/InspectorExpandedItems.asset
+/Library/LastSceneManagerSetup.txt
+/Library/LibraryFormatVersion.txt
+/Library/MonoManager.asset
+/Library/SceneVisibilityState.asset
+/Library/ScriptMapper
+/Library/ShaderCache.db
+/Library/SourceAssetDB
+/Library/SourceAssetDB-lock
+/Library/SpriteAtlasDatabase.asset
+/Library/Style.catalog
+/UserSettings
+/.vsconfig
+/ProjectSettings
+/Library
