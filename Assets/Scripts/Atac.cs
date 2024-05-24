@@ -29,7 +29,15 @@ public class Atac : MonoBehaviour
         animatie.SetTrigger("Atac");
         timpAtac = 0;
 
-        bileFoc[0].transform.position = incepeBila.position;
-        bileFoc[0].GetComponent<bilaFoc>().Directie(Mathf.Sign(transform.localScale.x));
+        bileFoc[gasesteBila()].transform.position = incepeBila.position;
+        bileFoc[gasesteBila()].GetComponent<bilaFoc>().Directie(Mathf.Sign(transform.localScale.x));
+    }
+
+    private int gasesteBila()
+    {
+        for (int i = 0; i < bileFoc.Length; i++)
+            if (!bileFoc[i].activeInHierarchy)
+                return i;
+        return 0;
     }
 }
