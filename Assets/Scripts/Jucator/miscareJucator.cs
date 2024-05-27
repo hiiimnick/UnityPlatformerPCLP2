@@ -1,4 +1,6 @@
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class miscareJucator : MonoBehaviour
 {
@@ -6,6 +8,8 @@ public class miscareJucator : MonoBehaviour
     [SerializeField] private LayerMask layerPamant; //adaugat layer pentru a verifica daca jucatorul atinge pamantul
     [SerializeField] private LayerMask layerPerete; //adaugat layer pentru a verifica daca jucatorul atinge un perete
 
+
+    [SerializeField] public Canvas titleScreen; //muta-l in alt script mai tarziu
     private BoxCollider2D boxCollider;
     private Rigidbody2D corp;
     private Animator animatie;
@@ -28,6 +32,11 @@ public class miscareJucator : MonoBehaviour
             transform.localScale = new Vector3(3.5f, 3.5f, 3.5f);
         else if(miscare < -0.01f)
             transform.localScale = new Vector3(-3.5f, 3.5f, 3.5f);
+
+        if(Input.anyKey && titleScreen.enabled) //daca apasam orice tasta si ecranul de titlu e activ, dezactiveaza-l, muta-l in alt script mai tarziu
+        {
+           titleScreen.gameObject.SetActive(false);
+        }
 
         if (Input.GetKey(KeyCode.Space) && pePamant())
             Saritura();

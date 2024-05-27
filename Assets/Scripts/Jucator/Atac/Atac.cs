@@ -29,8 +29,8 @@ public class Atac : MonoBehaviour
         animatie.SetTrigger("Atac");
         timpAtac = 0;
 
-        bileFoc[0].transform.position = incepeBila.position;
-        bileFoc[0].GetComponent<bilaFoc>().Directie(transform.localScale.x);
+        bileFoc[gasesteBila()].transform.position = incepeBila.position;
+        bileFoc[gasesteBila()].GetComponent<bilaFoc>().Directie(transform.localScale.x);
     }
 
     private int gasesteBila()
