@@ -6,11 +6,11 @@ public class urmN : MonoBehaviour
     [SerializeField] private Transform nivelVechi;
     [SerializeField] private Transform nivelNou;
 
-    //private void OnTriggerEnter2D(Collider2D colizie)
+    //private void OnTriggerEnter2D(Collider2D collider)
     //{
-        //if (colizie.CompareTag("Player"))
+        //if (collider.CompareTag("Player"))
         //{
-            //if (colizie.transform.position.x < transform.position.x)
+            //if (collider.transform.position.x < transform.position.x)
                 //cam.nivelNou(nivelNou);
             //else
                //cam.nivelNou(nivelVechi);

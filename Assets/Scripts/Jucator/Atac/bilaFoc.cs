@@ -34,6 +34,11 @@ public class bilaFoc : MonoBehaviour
         lovit = true;
         boxCollider.enabled = false;
         animatie.SetTrigger("explozie");
+
+        if(collision.tag == "Inamic")
+        {
+            collision.GetComponent<Viata>().IaDaune(1);
+        }
     }
 
     public void Directie(float mdirectie)
